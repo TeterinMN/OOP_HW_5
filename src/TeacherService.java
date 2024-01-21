@@ -1,7 +1,11 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// Реализация сервиса преподавателей
+/*
+Класс реализации управления списком преподавателей.
+Класс TeacherService соответствует принципу единственной ответственности, так как он отвечает
+только за управление списком преподавателей.
+*/
 class TeacherService implements TeacherManagement {
     private final List<Teacher> teachers;
     public TeacherService() {

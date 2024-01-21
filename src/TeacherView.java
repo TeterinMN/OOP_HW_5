@@ -1,7 +1,11 @@
 import java.util.List;
 
-// Реализация представления преподавателей
-class TeacherView implements TeacherDisplay {
+/*
+Класс TeacherView соответствует принципу разделения интерфейса. Так как клиенты могут зависеть только от тех
+интерфейсов, которые им действительно нужны.
+Класс отображения преподавателей реализует оба интерфейса TeacherSingleDisplay и TeacherListDisplay.
+ */
+class TeacherView implements TeacherSingleDisplay, TeacherListDisplay {
     public void displayTeacher(Teacher teacher) {
         System.out.println("ID: " + teacher.id() +
                 ", Имя: " + teacher.name() +

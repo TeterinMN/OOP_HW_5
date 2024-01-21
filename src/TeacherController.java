@@ -3,9 +3,9 @@ import java.util.List;
 // Контроллер преподавателей
 class TeacherController {
     private final TeacherManagement model;
-    private final TeacherDisplay view;
+    private final TeacherListDisplay view;
 
-    public TeacherController(TeacherManagement model, TeacherDisplay view) {
+    public TeacherController(TeacherManagement model, TeacherListDisplay view) {
         this.model = model;
         this.view = view;
     }
